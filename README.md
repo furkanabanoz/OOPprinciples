@@ -1,3 +1,2 @@
-# OOPprinciples
-# OOPprinciples
-# OOPprinciples
+# OOPprinciples 
+This is my first study with oop principles

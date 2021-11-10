@@ -19,5 +19,10 @@ public class Lecturer extends Academician{
     }
     public  void  sinavYap(){
         System.out.println(this.getName()+" sinav yapti.");
+
+    }
+    @Override
+    public void derseGir(String saat){
+        System.out.println(this.getName()+" derse giris yapti saat : "+saat);
     }
 }

@@ -1,4 +1,4 @@
-public class Employee {
+public abstract class Employee {
     private String name;
     private String surName;
     private String ePosta;
@@ -44,13 +44,16 @@ public class Employee {
     }
 
     public void giris(){
-        System.out.println(this.name+" "+this.surName+" in the universty");
+        System.out.println(this.getName()+" "+this.getSurName()+" in the universty");
     }
     public void cikis(){
-        System.out.println(this.name+" "+this.surName+" out the universty");
+        System.out.println(this.getName()+" "+this.getSurName()+" out the universty");
     }
     public void yemekhane(){
-        System.out.println(this.name+" "+this.surName+" in the dining hall");
+        System.out.println(this.getName()+" "+this.getSurName()+" in the dining hall");
+    }
+    public void giris(String girisSaati,String cikisSaati){
+        System.out.println(girisSaati+" de girdi "+cikisSaati+" de cikti");
     }
 
 

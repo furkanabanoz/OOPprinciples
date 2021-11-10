@@ -1,4 +1,4 @@
-public class Academician extends Employee{
+public abstract class Academician extends Employee{
     private String bolum;
     private String unvan;
     public Academician(String name, String surName, String ePosta, String telNo,String bolum,String unvan) {
@@ -23,7 +23,9 @@ public class Academician extends Employee{
         this.unvan = unvan;
     }
 
-    public  void derseGir(){
-        System.out.println(this.getName()+" "+this.getSurName()+" going to working class");
+    public abstract void derseGir(String saat);
+    @Override
+    public void giris(){
+        System.out.println(this.getName()+" "+this.getSurName()+" A kapisindan giris yapti.");
     }
 }

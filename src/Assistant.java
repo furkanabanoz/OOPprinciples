@@ -1,4 +1,4 @@
-public class Assistant extends Academician{
+public abstract class Assistant extends Academician{
     private String  OfisSaati;
 
     public Assistant(String name, String surName, String ePosta, String telNo, String bolum, String unvan, String ofisSaati) {
@@ -16,5 +16,10 @@ public class Assistant extends Academician{
 
     public void quizYap(){
         System.out.println(this.getName()+" quiz yapiyor");
+    }
+
+    @Override
+    public void derseGir(String saat) {
+
     }
 }
